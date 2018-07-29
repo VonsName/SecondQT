@@ -31,6 +31,8 @@ HEADERS += \
         cmainwidget.h \
     subwidget.h
 
+CONFIG += C++11
+
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin

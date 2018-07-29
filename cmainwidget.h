@@ -13,9 +13,11 @@ class CMainWidget : public QWidget
 public:
     CMainWidget(QWidget *parent = nullptr);
     ~CMainWidget();
+public slots:
     void  mySlot();
     void changeToChild();
     void doChild();
+    void doSlot(int,QString);
 private:
     QPushButton b;
     QPushButton *b1;

@@ -14,4 +14,6 @@ SubWidget::SubWidget(QWidget *parent) : QWidget(parent)
 void SubWidget::changeToParent()
 {
     emit mySigNal();
+    //发送带参数的信号
+    emit mySigNal(100,QString("data slot"));
 }
